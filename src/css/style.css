@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:wdth,wght@100,100;100,200;100,300;100,400;100,500;100,600;100,700;100,800;100,900;125,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Truculenta";
+}
+
+input {
+  caret-color: #1f1f1f;
+  font-weight: 400;
+  border: 2px solid transparent;
+}
+input:focus {
+  border-color: #160C28;
+}
+
+input, button {
+  font-size: 1.2em;
+  padding: 5px 10px;
+  outline: none;
+  color: #1f1f1f;
+  transition: all 0.4s;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+button svg {
+  margin-right: 6%;
+}
+button:not(:first-of-type) {
+  background-color: #160C28;
+  color: #EBF2FA;
+}
+button:not(:first-of-type):hover {
+  background-color: #EFCB68;
+  color: #1f1f1f;
+}
+button:first-of-type {
+  background-color: #EFCB68;
+  color: #1f1f1f;
+}
+button:first-of-type:hover {
+  background-color: #160C28;
+  color: #EBF2FA;
+}
+
+body {
+  color: #EBF2FA;
+}
+body #root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+body #root .App {
+  margin-top: 50px;
+  background-color: #427AA1;
+  padding: 20px 50px;
+  width: 85vw;
+  border-radius: 10px;
+}
+body #root .App h1 {
+  font-size: 3em;
+  font-stretch: 125%;
+  background-color: #EFCB68;
+  padding: 20px;
+  text-align: center;
+  color: #1f1f1f;
+  border-radius: 10px;
+}
+body #root .App > form {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 45px;
+}
+body #root .App > form input {
+  border-radius: 10px 0 0 10px;
+}
+body #root .App > form button {
+  border-radius: 0 10px 10px 0;
+}
+body #root .App ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: grid;
+  grid-gap: 15px;
+}
+body #root .App ul li {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 45px;
+  color: #1f1f1f;
+}
+body #root .App ul li span {
+  padding-left: 10px;
+  font-size: 1.2em;
+  align-self: center;
+  font-stretch: 125%;
+  background-color: #EBF2FA;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
+body #root .App ul li div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body #root .App ul li div button:last-of-type {
+  border-radius: 0 10px 10px 0;
+}
+body #root .App ul form {
+  height: 45px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+body #root .App ul form input {
+  border-radius: 10px 0 0 10px;
+}
+body #root .App ul form button {
+  border-radius: 0 10px 10px 0;
+}
+body .credit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  position: fixed;
+  bottom: 20px;
+  color: #1f1f1f;
+  left: calc(50% - 110px);
+  width: 220px;
+  background-color: #EBF2FA;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-stretch: 125%;
+  border: 2px solid #427AA1;
+}
+body .credit a {
+  color: #427AA1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .credit a img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
