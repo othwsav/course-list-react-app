@@ -61,7 +61,7 @@ class App extends Component{
 	}
 
 	render(){
-
+		const blankList = <span className="noItems">There is no Item to show.</span>;
 		const {courses} = this.state,
 			courseList = courses.map((course, index) => {
 				return <CourseList edit={this.editCourse} i={index} delete={this.deleteCourse} dataCourse={course} key={index}/>
@@ -70,9 +70,14 @@ class App extends Component{
 		<div className="App">
 			<h1>Course List</h1>
 			<CourseForm crVal={this.state.current} updateCourse={this.updateCourse} addCourse={this.addCourse}/>
-			<ul>
+
+			{(this.state.courses.length > 0)? 
+			(<ul>
 				{courseList}
-			</ul>
+			</ul>) 
+			: 
+			blankList}
+			
 		</div>
 		)
 	}

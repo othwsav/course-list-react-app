@@ -13,7 +13,7 @@ class CourseList extends Component{
 	renderCourse = () => {
 		return (
             <li>
-				<span>{this.props.dataCourse.name}</span>
+				<span>{this.props.i + 1}- {this.props.dataCourse.name}</span>
 				<div>
 					<button onClick={() => {this.toggleState()}}>
 						<FontAwesomeIcon icon={faEdit} />
@@ -45,7 +45,7 @@ class CourseList extends Component{
 	// render update form
 	renderUpdateForm = () => (
 		<form onSubmit={this.updateItem}>
-			<input type="text" ref={v => {this.input = v}} defaultValue={this.props.dataCourse.name} autoFocus/>
+			<input type="text" ref={v => {this.input = v}} defaultValue={this.props.dataCourse.name} autoFocus required/>
 			<button>
 				<FontAwesomeIcon icon={faSave} />
 				Save
